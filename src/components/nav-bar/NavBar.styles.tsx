@@ -1,5 +1,6 @@
 // File: src/components/Navbar/Navbar.styles.ts
 import styled from 'styled-components';
+import Logo from './Logo.component';
 
 interface NavbarContainerProps {
   isScrolled: boolean;
@@ -19,11 +20,11 @@ export const NavbarContainer = styled.nav<NavbarContainerProps>`
   left: 0;
   right: 0;
   z-index: 100;
-  padding: ${(props) => (props.isScrolled ? '12px 0' : '20px 0')};
+  padding: ${(props) => (props.isScrolled ? '8px 0' : '15px 0')};
   background-color: ${(props) => 
     props.isScrolled 
       ? 'rgba(0, 0, 0, 0.9)' 
-      : 'rgba(255, 255, 255, 0.1)'};
+      : 'rgba(0, 0, 0, 0.2)'};
   backdrop-filter: blur(5px);
   transition: all 0.3s ease;
   box-shadow: ${(props) => 
@@ -39,8 +40,8 @@ export const NavbarInner = styled.div`
   align-items: center;
 `;
 
-export const Logo = styled.img`
-  height: 40px;
+export const StyledLogo = styled(Logo)`
+  height: 50px;
 `;
 
 export const NavLinks = styled.div`
@@ -55,7 +56,7 @@ export const NavLinks = styled.div`
 export const NavLink = styled.a<NavLinkProps>`
   color: white;
   text-decoration: none;
-  font-weight: ${(props) => (props.mobile ? 'bold' : 'normal')};
+  font-weight: ${(props) => (props.mobile ? 'bold' : '600')};
   font-size: ${(props) => (props.mobile ? '18px' : '16px')};
   padding: ${(props) => (props.mobile ? '16px 0' : '0')};
   display: ${(props) => (props.mobile ? 'block' : 'inline-block')};
@@ -63,7 +64,7 @@ export const NavLink = styled.a<NavLinkProps>`
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   
   &:hover {
-    color: #3498db;
+    color: #d4af37; /* Gold color to match logo */
   }
 `;
 

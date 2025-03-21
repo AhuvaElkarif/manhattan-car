@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   NavbarContainer, 
   NavbarInner, 
-  Logo, 
+  StyledLogo, 
   NavLinks,
   NavLink,
   MobileMenuButton,
@@ -17,11 +17,10 @@ interface NavItem {
 }
 
 interface NavbarProps {
-  logo: string;
   navItems: NavItem[];
 }
 
-const Navbar: React.FC<NavbarProps> = ({ logo, navItems }) => {
+const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -47,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ logo, navItems }) => {
   return (
     <NavbarContainer isScrolled={isScrolled}>
       <NavbarInner>
-        <Logo src={logo} alt="Site Logo" />
+        <StyledLogo />
         
         <NavLinks>
           {navItems.map((item) => (

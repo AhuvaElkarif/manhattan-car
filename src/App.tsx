@@ -49,11 +49,8 @@ const App: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <Navbar 
-        logo="/images/logo.jpg" 
-        navItems={navItems} 
-      />
-      <div style={{ paddingTop: '80px' }}>
+      <Navbar navItems={navItems} />
+      <div>
         <Carousel
           images={carImages}
           price="$35,000"
