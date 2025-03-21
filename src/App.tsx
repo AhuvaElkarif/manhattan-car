@@ -53,7 +53,6 @@ const App: React.FC = () => {
       <div>
         <Carousel
           images={carImages}
-          price="$35,000"
           title="Mercedes-Benz C Class"
           subtitle="Luxury Sedan with Premium Features"
         />

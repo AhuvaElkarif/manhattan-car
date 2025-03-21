@@ -95,15 +95,6 @@ export const CarInfo = styled.div`
   max-width: 60%;
 `;
 
-export const PriceTag = styled.div`
-  background-color: rgba(0, 0, 0, 0.7);
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-weight: bold;
-  margin-bottom: 12px;
-`;
-
 export const CarTitle = styled.h2`
   font-size: 36px;
   margin: 0 0 8px 0;

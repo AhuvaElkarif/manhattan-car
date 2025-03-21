@@ -1,4 +1,3 @@
-// File: src/components/Carousel/Carousel.tsx
 import React, { useState, useEffect } from 'react';
 import { 
   CarouselContainer, 
@@ -7,7 +6,6 @@ import {
   CarouselDot, 
   CarouselDotsContainer,
   CarouselArrow,
-  PriceTag,
   CarTitle,
   CarSubtitle,
   CarInfo,
@@ -24,7 +22,6 @@ interface CarouselImage {
 
 interface CarouselProps {
   images: CarouselImage[];
-  price: string;
   title: string;
   subtitle?: string;
   autoPlayInterval?: number;
@@ -32,7 +29,6 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({ 
   images, 
-  price, 
   title, 
   subtitle,
   autoPlayInterval = 5000 
@@ -89,7 +85,6 @@ const Carousel: React.FC<CarouselProps> = ({
       ))}
       
       <CarInfo>
-        <PriceTag>{price}</PriceTag>
         <CarTitle>{title}</CarTitle>
         {subtitle && <CarSubtitle>{subtitle}</CarSubtitle>}
         
