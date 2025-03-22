@@ -3,6 +3,10 @@ import React from 'react';
 import Navbar from './components/nav-bar/NavBar.component';
 import Carousel from './components/carousel/Carousel.Component';
 import { createGlobalStyle } from 'styled-components';
+import WhyChooseUs from './components/whyChooseus/WhyChooseUs.component';
+import CustomerTestimonials from './components/customer-testimonials/CustomerTestimonials.component';
+import AboutPage from './components/about/About.component';
+import Footer from './footer/Footer.component';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -56,6 +60,18 @@ const App: React.FC = () => {
           title="Mercedes-Benz C Class"
           subtitle="Luxury Sedan with Premium Features"
         />
+      </div>
+      <div style={{margin:"40px 0"}}>
+        <WhyChooseUs/>
+      </div>
+      <div style={{margin:"40px 0"}}>
+        <CustomerTestimonials/>
+      </div>
+      <div style={{margin:"40px 0"}}>
+        <AboutPage/>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </>
   );
