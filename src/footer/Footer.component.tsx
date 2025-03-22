@@ -24,9 +24,9 @@ const Footer: React.FC = () => {
     <FooterContainer>
       <FooterContent>
         <LogoSection>
-          <LogoImage src="/path-to-logo.png" alt="SEA & CAR" />
+          <LogoImage src="/path-to-logo.png" alt="Manhattan Car" />
           <p>
-            SEA & CAR היא סוכנות רכבי יוקרה המתמחה ביבוא אישי, קנייה, מכירה,
+            Manhattan Car היא סוכנות רכבי יוקרה המתמחה ביבוא אישי, קנייה, מכירה,
             ייעוץ ותיווך של רכבי יוקרה. הסוכנות קיימת למעלה מ- 10 שנים.
           </p>
           <SocialLinksContainer>
@@ -78,8 +78,8 @@ const Footer: React.FC = () => {
       </FooterDisclaimer>
 
       <FooterBottom>
-        <CopyrightText>© 2025 sea-car. All rights reserved.</CopyrightText>
-        <CreditsText>Design & Developed by Ahuva Elkarif</CreditsText>
+        <CopyrightText>© 2025 manhattan-car. All rights reserved.</CopyrightText>
+        {/* <CreditsText>Design & Developed by Ahuva Elkarif</CreditsText> */}
       </FooterBottom>
     </FooterContainer>
   );
