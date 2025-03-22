@@ -6,7 +6,7 @@ import { createGlobalStyle } from 'styled-components';
 import WhyChooseUs from './components/whyChooseus/WhyChooseUs.component';
 import CustomerTestimonials from './components/customer-testimonials/CustomerTestimonials.component';
 import AboutPage from './components/about/About.component';
-import Footer from './footer/Footer.component';
+import Footer from './components/footer/Footer.component';
 
 const GlobalStyle = createGlobalStyle`
   * {
