@@ -7,6 +7,7 @@ import WhyChooseUs from './components/whyChooseus/WhyChooseUs.component';
 import CustomerTestimonials from './components/customer-testimonials/CustomerTestimonials.component';
 import AboutPage from './components/about/About.component';
 import Footer from './components/footer/Footer.component';
+import PremiumBrands from './components/premium-brands/PremiumBrands.component';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -69,6 +70,9 @@ const App: React.FC = () => {
       </div>
       <div style={{margin:"40px 0"}}>
         <AboutPage/>
+      </div>
+      <div style={{margin:"40px 0"}}>
+        {/* <PremiumBrands/> */}
       </div>
       <div>
         <Footer/>
